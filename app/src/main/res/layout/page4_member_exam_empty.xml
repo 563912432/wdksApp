@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ks_page4_member_exam_empty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/ks_page4_view2"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ks_page4_member_exam_empty_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_5dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_12dp">
+
+        <ImageView
+            android:id="@+id/Page4_member_exam_empty_iv1"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ico_my_exam" />
+
+        <TextView
+            android:id="@+id/ks_page4_expand1_p_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_toRightOf="@+id/Page4_member_exam_empty_iv1"
+            android:text="@string/my_exam"
+            android:textColor="@color/dimGray"
+            android:textSize="@dimen/size_14sp" />
+
+        <ImageView
+            android:id="@+id/ks_page4_member_exam_empty_iv"
+            android:layout_width="14dp"
+            android:layout_height="@dimen/size_12dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_2dp"
+            android:scaleType="fitXY" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ks_page4_member_exam_empty_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0.5dp"
+            android:background="@color/light_grey" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:text="题库内容为空"
+            android:textColor="@color/dimGray"
+            android:textSize="@dimen/size_14sp" />
+
+        <TextView
+            android:id="@+id/ks_page4_member_exam_empty_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:background="@color/deepSkyBlue"
+            android:padding="@dimen/size_5dp"
+            android:text="前往购买>>"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_13sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

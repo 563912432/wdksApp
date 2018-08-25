@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:focusable="false"
+    android:orientation="horizontal"
+    android:padding="@dimen/size_10dp">
+    <!--左边的图片-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/ks_page10_be_details_listView_iv1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_100dp"
+            android:scaleType="fitXY" />
+
+    </LinearLayout>
+    <!--右边文字介绍-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/size_10dp">
+        <!--上-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ks_page10_be_details_listView_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/greyBlack"
+                android:textSize="@dimen/size_14sp" />
+
+            <TextView
+                android:id="@+id/ks_page10_be_details_listView_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/orange_deep"
+                android:textSize="@dimen/size_12sp" />
+        </LinearLayout>
+        <!--中-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+            <!--左边文字-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <!--左上-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                    <!--￥-->
+                    <TextView
+                        android:id="@+id/ks_page10_be_details_listView_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/price_ying"
+                        android:textColor="@color/darkGray"
+                        android:textSize="@dimen/size_13sp" />
+                    <!--价格-->
+                    <TextView
+                        android:id="@+id/ks_page10_be_details_listView_tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/ks_page10_be_details_listView_price"
+                        android:textColor="@color/darkGray"
+                        android:textSize="@dimen/size_13sp" />
+
+                    <View
+                        android:id="@+id/ks_page10_be_details_listView_view"
+                        android:layout_width="@dimen/size_50dp"
+                        android:layout_height="@dimen/size_0.5dp"
+                        android:layout_centerVertical="true"
+                        android:background="@color/darkGray"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <!--￥-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price_ying"
+                        android:textColor="@color/deep_red"
+                        android:textSize="@dimen/size_13sp"
+                        android:textStyle="bold" />
+                    <!--现售价-->
+                    <TextView
+                        android:id="@+id/ks_page10_be_details_listView_tv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/deep_red"
+                        android:textSize="@dimen/size_13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--右边按钮-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/ks_page10_be_details_listView_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/line_shop_shape"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/size_5dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/size_18dp"
+                        android:layout_height="@dimen/size_18dp"
+                        android:background="@drawable/ico_buy_car_grey" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size_5dp"
+                        android:lines="1"
+                        android:text="@string/add"
+                        android:textColor="@color/greyBlack"
+                        android:textSize="@dimen/size_13sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

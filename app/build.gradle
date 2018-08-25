@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        applicationId "com.example.wdks.wdks"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/universal-image-loader-1.9.5.jar')
+    implementation project(':convenientbanner')
+    implementation project(':systembartint')
+    implementation project(':android-volley-master')
+    implementation project(':circleimageview')
+    implementation files('libs/android-viewbadger.jar')
+    implementation project(':wheel')
+    implementation project(':jcvideoplayer-lib')
+    implementation 'com.android.support:appcompat-v7:23.4.0'
+    implementation 'com.android.support:support-v4:23.4.0'
+    implementation 'com.android.support:design:23.4.0'
+    implementation 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+    implementation 'com.zhy:flowlayout-lib:1.0.3'
+    implementation 'com.github.iwgang:countdownview:2.1.2'
+    testImplementation 'junit:junit:4.12'
+}

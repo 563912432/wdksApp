@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/size_10dp">
+
+    <TextView
+        android:id="@+id/ks_page37_ma_details_one_listView_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="2"
+        android:textColor="@color/dimGray_m"
+        android:textSize="@dimen/size_14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ks_page37_ma_details_one_listView_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:lines="1"
+            android:textColor="@color/dimGray"
+            android:textSize="@dimen/size_14sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0.5dp"
+        android:layout_margin="@dimen/size_5dp"
+        android:background="@color/light_grey" />
+
+    <TextView
+        android:id="@+id/ks_page37_ma_details_one_listView_tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="2"
+        android:textColor="@color/dimGray_m"
+        android:textSize="@dimen/size_14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/ks_page37_ma_details_one_listView_tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:lines="1"
+            android:textColor="@color/dimGray"
+            android:textSize="@dimen/size_14sp" />
+    </RelativeLayout>
+    
+</LinearLayout>

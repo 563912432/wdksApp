@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightSkyBlue"
+    android:padding="@dimen/size_10dp">
+
+    <TextView
+        android:id="@+id/ks_page21_expand_parent_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_20dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_16sp" />
+
+</LinearLayout>

@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <!--标题栏-->
+    <RelativeLayout
+        android:id="@+id/ks_page14_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/ks_page14_back"
+            android:layout_width="@dimen/size_50dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:background="@drawable/ico_back_grey" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/buy_car"
+            android:textColor="@color/dimGray_m"
+            android:textSize="@dimen/size_16sp" />
+
+        <LinearLayout
+            android:id="@+id/ks_page14_line_subtitle"
+            android:layout_width="@dimen/size_50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/ks_page14_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:text="@string/edit"
+                android:textColor="@color/dimGray_m"
+                android:textSize="@dimen/size_15sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/ks_page14_view1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0.5dp"
+        android:layout_below="@id/ks_page14_toolbar"
+        android:background="@color/light_grey" />
+
+    <!--底部布局-->
+    <LinearLayout
+        android:id="@+id/ks_page14_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/whiteSmoke"
+        android:orientation="horizontal"
+        android:visibility="visible">
+        <!--左-->
+        <!--按钮+文字-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ks_page14_all_chose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <com.example.wdks.newwdksapp.tools.MyCheckBox
+                    android:id="@+id/ks_page14_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:button="@null"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="visible"
+                    app:checkBoxLeft="@drawable/cb_buy_car_bg"
+                    app:mCheckBoxSize="@dimen/size_30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_5dp"
+                    android:text="@string/chose_all"
+                    android:textColor="@color/dimGray_m"
+                    android:textSize="@dimen/size_14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--中-->
+        <LinearLayout
+            android:id="@+id/ks_page14_allPrice_total"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+            <!--中上-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_20dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/ks_page14_allPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_all"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/size_15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ks_page14_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥0.00"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/size_15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <!--中下-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/ks_page14_select_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:text="已选0件商品"
+                    android:textColor="@color/dimGray"
+                    android:textSize="@dimen/size_13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--右-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/ks_page14_buy_or_del"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_40dp"
+                android:background="@drawable/btn_pay_shape"
+                android:text="@string/to_pay"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--主要内容-->
+    <ListView
+        android:id="@+id/ks_page14_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ks_page14_bottom_bar"
+        android:layout_below="@id/ks_page14_view1"
+        android:scrollbars="none" />
+    <!--为空时显示的界面-->
+    <LinearLayout
+        android:id="@+id/ks_page14_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ks_page14_view1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/size_50dp"
+            android:layout_height="@dimen/size_50dp"
+            android:background="@drawable/ico_car_empty" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:text="@string/buyCar_empty"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/size_15sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

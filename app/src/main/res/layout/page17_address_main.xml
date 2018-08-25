@@ -1,0 +1,176 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ks_page17_address_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <!--标题栏-->
+        <RelativeLayout
+            android:id="@+id/ks_page17_address_main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_50dp"
+            android:background="@color/lightSkyBlue">
+
+            <LinearLayout
+                android:id="@+id/ks_page17_address_main_back"
+                android:layout_width="@dimen/size_40dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="@dimen/size_20dp"
+                    android:layout_height="@dimen/size_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:background="@drawable/ico_back" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/add_goods_address"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_16sp" />
+
+            <LinearLayout
+                android:id="@+id/ks_page17_save"
+                android:layout_width="@dimen/size_50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/ks_page17_address_main_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_15sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--姓名-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/size_15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/true_name"
+                    android:textColor="@color/dimGray"
+                    android:textSize="@dimen/size_15sp" />
+
+                <EditText
+                    android:id="@+id/ks_page17_address_main_ed1"
+                    style="@style/AddAddress_et"
+                    android:hint="@string/input_true_name" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_0.5dp"
+                android:background="@color/light_grey" />
+            <!--联系方式-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/size_15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/contact"
+                    android:textColor="@color/dimGray"
+                    android:textSize="@dimen/size_15sp" />
+
+                <EditText
+                    android:id="@+id/ks_page17_address_main_ed2"
+                    style="@style/AddAddress_et"
+                    android:hint="@string/input_contact" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_0.5dp"
+                android:background="@color/light_grey" />
+            <!--选择地区-->
+            <RelativeLayout
+                android:id="@+id/ks_page17_address_main_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="@dimen/size_15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/chose_district"
+                    android:textColor="@color/dimGray"
+                    android:textSize="@dimen/size_15sp" />
+
+                <TextView
+                    android:id="@+id/ks_page17_address_main_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/transparent"
+                    android:text="@string/input_district"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/size_14sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_0.5dp"
+                android:background="@color/light_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/size_15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detail_address"
+                    android:textColor="@color/dimGray"
+                    android:textSize="@dimen/size_15sp" />
+
+                <EditText
+                    android:id="@+id/ks_page17_address_main_ed3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10dp"
+                    android:background="@color/transparent"
+                    android:hint="@string/input_detail_address"
+                    android:textColor="@color/gray"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/size_14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

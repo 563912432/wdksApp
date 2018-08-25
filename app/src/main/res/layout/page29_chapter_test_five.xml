@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ks_page29_test_five"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ks_page29_test_five_push"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteSmoke"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/size_10dp">
+
+            <ImageView
+                android:id="@+id/ks_page29_test_five_iv1"
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp"
+                android:src="@drawable/ico_push" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_5dp"
+                android:text="阅读材料"
+                android:textColor="@color/dimGray_m"
+                android:textSize="@dimen/size_15sp" />
+
+        </LinearLayout>
+
+        <com.example.wdks.newwdksapp.tools.VerticalDrawerLayout
+            android:id="@+id/ks_page29_test_five_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--主内容-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <include layout="@layout/page29_chapter_test_five_content" />
+            </LinearLayout>
+
+            <!--抽屉内容-->
+            <LinearLayout
+                android:id="@+id/drawer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/whiteSmoke"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="材料内容"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+        </com.example.wdks.newwdksapp.tools.VerticalDrawerLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

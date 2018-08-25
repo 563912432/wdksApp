@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ks_page13"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!--标题栏-->
+    <RelativeLayout
+        android:id="@+id/ks_page13_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        android:background="@color/deepSkyBlue">
+
+        <LinearLayout
+            android:id="@+id/ks_page13_back"
+            android:layout_width="@dimen/size_50dp"
+            android:layout_height="match_parent">
+
+            <ImageView style="@style/Icon_back" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/Middle_content"
+            android:text="@string/pwd_forget" />
+
+    </RelativeLayout>
+
+    <!--主要内容-->
+    <LinearLayout
+        android:id="@+id/ks_page13_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/whiteSmoke"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_20dp"
+            android:layout_marginRight="@dimen/size_20dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:background="@drawable/edit_login_shape"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_20dp"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:layout_marginRight="@dimen/size_10dp"
+                    android:layout_marginTop="@dimen/size_20dp"
+                    android:text="手机号码:"
+                    android:textColor="@color/dimGray_m"
+                    android:textSize="@dimen/size_15sp" />
+
+                <EditText
+                    android:id="@+id/ks_page13_edt1"
+                    style="@style/log_edit"
+                    android:hint="输入您的手机号" />
+
+                <ImageView
+                    android:id="@+id/ks_page13_iv1"
+                    android:layout_width="@dimen/size_30dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_marginRight="@dimen/size_10dp"
+                    android:background="@drawable/ico_x_blue" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:background="@color/lightSkyBlue" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_15dp"
+                android:layout_marginTop="@dimen/size_15dp">
+
+                <EditText
+                    android:id="@+id/ks_page13_edt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:background="@null"
+                    android:hint="输入手机验证码"
+                    android:lines="1"
+                    android:textColor="@color/dimGray_m"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/size_15sp" />
+
+                <Button
+                    android:id="@+id/ks_page13_btn1"
+                    android:layout_width="@dimen/size_90dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/size_10dp"
+                    android:background="@drawable/btn_login_shape2"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/size_10dp"
+                    android:paddingRight="@dimen/size_10dp"
+                    android:text="获取验证码"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_12sp" />
+
+                <ImageView
+                    android:id="@+id/ks_page13_iv2"
+                    android:layout_width="@dimen/size_30dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="@dimen/size_10dp"
+                    android:layout_toLeftOf="@id/ks_page13_btn1"
+                    android:background="@drawable/ico_x_blue" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:background="@color/lightSkyBlue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_20dp"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:layout_marginRight="@dimen/size_10dp"
+                    android:layout_marginTop="@dimen/size_20dp"
+                    android:text="密        码:"
+                    android:textColor="@color/dimGray_m"
+                    android:textSize="@dimen/size_15sp" />
+
+                <EditText
+                    android:id="@+id/ks_page13_edt3"
+                    style="@style/log_edit"
+                    android:hint="请输入密码" />
+
+                <ImageView
+                    android:id="@+id/ks_page13_iv3"
+                    android:layout_width="@dimen/size_30dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_marginRight="@dimen/size_10dp"
+                    android:background="@drawable/ico_x_blue" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:background="@color/lightSkyBlue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_20dp"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:layout_marginRight="@dimen/size_10dp"
+                    android:layout_marginTop="@dimen/size_20dp"
+                    android:text="确认密码:"
+                    android:textColor="@color/dimGray_m"
+                    android:textSize="@dimen/size_15sp" />
+
+                <EditText
+                    android:id="@+id/ks_page13_edt4"
+                    style="@style/log_edit"
+                    android:hint="再输入一次密码" />
+
+                <ImageView
+                    android:id="@+id/ks_page13_iv4"
+                    android:layout_width="@dimen/size_30dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_marginRight="@dimen/size_10dp"
+                    android:background="@drawable/ico_x_blue" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ks_page13_btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_20dp"
+            android:layout_marginRight="@dimen/size_20dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:background="@drawable/btn_login_shape2"
+            android:text="@string/confirm_change"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_15sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

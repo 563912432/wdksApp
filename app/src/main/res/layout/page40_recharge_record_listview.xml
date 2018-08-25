@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--上-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recharge_time"
+            android:textColor="@color/dimGray_m"
+            android:textSize="@dimen/size_15sp" />
+
+        <TextView
+            android:id="@+id/ks_page40_recharge_record_listView_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_5dp"
+            android:textColor="@color/dimGray"
+            android:textSize="@dimen/size_15sp" />
+    </LinearLayout>
+
+    <!--中-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recharge_money"
+            android:textColor="@color/dimGray_m"
+            android:textSize="@dimen/size_15sp" />
+
+        <TextView
+            android:id="@+id/ks_page40_recharge_record_listView_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_5dp"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/size_15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_5dp"
+            android:text="@string/yuan"
+            android:textColor="@color/dimGray_m"
+            android:textSize="@dimen/size_15sp" />
+    </LinearLayout>
+
+    <!--下-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recharge_num"
+            android:textColor="@color/dimGray_m"
+            android:textSize="@dimen/size_15sp" />
+
+        <TextView
+            android:id="@+id/ks_page40_recharge_record_listView_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_5dp"
+            android:textColor="@color/dimGray"
+            android:textSize="@dimen/size_15sp" />
+    </LinearLayout>
+
+</LinearLayout>

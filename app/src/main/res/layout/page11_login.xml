@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ks_page11"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!--标题栏-->
+    <RelativeLayout
+        android:id="@+id/ks_page11_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        android:background="@color/deepSkyBlue">
+
+        <LinearLayout
+            android:id="@+id/ks_page11_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+
+            <ImageView style="@style/Icon_back" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/Middle_content"
+            android:text="@string/login" />
+
+        <TextView
+            android:id="@+id/ks_page11_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_20dp"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16sp" />
+
+    </RelativeLayout>
+
+    <!--主要内容-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/whiteSmoke"
+        android:orientation="vertical">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ks_page11_iv1"
+            android:layout_width="@dimen/size_80dp"
+            android:layout_height="@dimen/size_80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/size_30dp"
+            app:civ_border_color="@color/dimGray_m"
+            app:civ_border_width="@dimen/size_0.5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size_20dp"
+            android:background="@drawable/edit_login_shape"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/size_10dp"
+                    android:text="账号:"
+                    android:textColor="@color/dimGray_m"
+                    android:textSize="@dimen/size_15sp" />
+
+                <EditText
+                    android:id="@+id/ks_page11_edt1"
+                    style="@style/log_edit" />
+
+                <ImageView
+                    android:id="@+id/ks_page11_iv2"
+                    android:layout_width="@dimen/size_30dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_marginRight="@dimen/size_10dp"
+                    android:background="@drawable/ico_x_blue" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:background="@color/lightSkyBlue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/size_10dp"
+                    android:text="密码:"
+                    android:textColor="@color/dimGray"
+                    android:textSize="@dimen/size_15sp" />
+
+                <EditText
+                    android:id="@+id/ks_page11_edt2"
+                    style="@style/log_edit" />
+
+                <ImageView
+                    android:id="@+id/ks_page11_iv3"
+                    android:layout_width="@dimen/size_30dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:layout_marginRight="@dimen/size_10dp"
+                    android:background="@drawable/ico_x_blue" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/ks_page11_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/size_30dp"
+            android:text="@string/forget"
+            android:textColor="@color/deepSkyBlue"
+            android:textSize="@dimen/size_15sp" />
+
+        <Button
+            android:id="@+id/ks_page11_btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_20dp"
+            android:layout_marginRight="@dimen/size_20dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:background="@drawable/btn_login_shape2"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_16sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

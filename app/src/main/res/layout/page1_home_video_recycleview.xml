@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/size_5dp"
+        android:layout_marginTop="@dimen/size_5dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/size_5dp"
+        android:paddingRight="@dimen/size_5dp">
+
+        <ImageView
+            android:id="@+id/ks_page1_video_recycleView_iv1"
+            android:layout_width="@dimen/size_150dp"
+            android:layout_height="@dimen/size_90dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/ks_page1_video_recycleView_tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:textColor="@color/dimGray"
+            android:textSize="@dimen/size_13sp" />
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_5dp">
+
+            <TextView
+                android:id="@+id/ks_page1_video_recycleView_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/video_teacher"
+                android:textColor="@color/darkGray"
+                android:textSize="@dimen/size_12sp" />
+
+            <TextView
+                android:id="@+id/ks_page1_video_recycleView_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ks_page1_video_recycleView_teacher"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/darkGray"
+                android:textSize="@dimen/size_12sp" />
+
+            <TextView
+                android:id="@+id/ks_page1_video_recycleView_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/deep_red"
+                android:textSize="@dimen/size_12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/ks_page1_video_recycleView_tv3"
+                android:text="@string/price_ying"
+                android:textColor="@color/deep_red"
+                android:textSize="@dimen/size_12sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/size_0.5dp"
+        android:layout_height="match_parent"
+        android:background="@color/light_grey" />
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ks_page40"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!--上：标题栏-->
+    <RelativeLayout
+        android:id="@+id/ks_page40_tool"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        android:background="@color/deepSkyBlue"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ks_page40_back"
+            android:layout_width="@dimen/size_50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView style="@style/Icon_back" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ks_page40_tv1"
+            style="@style/Middle_content"
+            android:text="@string/recharge_record" />
+
+    </RelativeLayout>
+    <!--下-->
+    <ListView
+        android:id="@+id/ks_page40_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollbars="none" />
+
+</LinearLayout>

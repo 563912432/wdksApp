@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ks_page37"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <!--上：标题栏-->
+    <LinearLayout
+        android:id="@+id/ks_page37_tool"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        android:background="@color/deepSkyBlue"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ks_page37_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView style="@style/Icon_back" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/ks_page37_tv1"
+                style="@style/Middle_content"
+                android:text="@string/myCollection" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ks_page37_collect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ks_page37_iv1"
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--中-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/ks_page37_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ks_page37_tool"
+        android:background="@color/white" />
+    <!--下-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/size_30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ks_page37_leftArrow"
+            android:layout_width="@dimen/size_45dp"
+            android:layout_height="@dimen/size_45dp"
+            android:background="@drawable/ico_left_arrow_gray" />
+
+        <ImageView
+            android:id="@+id/ks_page37_rightArrow"
+            android:layout_width="@dimen/size_45dp"
+            android:layout_height="@dimen/size_45dp"
+            android:layout_marginLeft="@dimen/size_40dp"
+            android:background="@drawable/ico_right_arrow_blue" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+

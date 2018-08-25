@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="@dimen/size_5dp">
+
+    <TextView
+        android:id="@+id/ks_page2_book_recycleView1_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_3dp"
+        android:textColor="@color/deepSkyBlue"
+        android:textSize="@dimen/size_15sp" />
+
+</LinearLayout>

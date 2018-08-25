@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/page10"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/ks_page10_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:focusable="false"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_10dp">
+        <!--左边的图片-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/ks_page10_iv1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_120dp"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+        <!--右边文字介绍-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/size_10dp">
+            <!--上-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ks_page10_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/greyBlack"
+                    android:textSize="@dimen/size_15sp" />
+
+                <TextView
+                    android:id="@+id/ks_page10_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/orange_deep"
+                    android:textSize="@dimen/size_12sp" />
+            </LinearLayout>
+            <!--中-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <!--￥-->
+                <TextView
+                    android:id="@+id/ks_page10_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/price_ying"
+                    android:textColor="@color/darkGray"
+                    android:textSize="@dimen/size_13sp" />
+                <!--价格-->
+                <TextView
+                    android:id="@+id/ks_page10_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/ks_page10_price"
+                    android:textColor="@color/darkGray"
+                    android:textSize="@dimen/size_13sp" />
+
+                <View
+                    android:id="@+id/ks_page10_view"
+                    android:layout_width="@dimen/size_50dp"
+                    android:layout_height="@dimen/size_0.5dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/darkGray"
+                    android:visibility="visible" />
+            </RelativeLayout>
+            <!--下-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <!--￥-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price_ying"
+                        android:textColor="@color/deep_red"
+                        android:textSize="@dimen/size_13sp"
+                        android:textStyle="bold" />
+                    <!--现售价-->
+                    <TextView
+                        android:id="@+id/ks_page10_tv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/deep_red"
+                        android:textSize="@dimen/size_13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/ks_page10_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/line_shop_shape"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/size_18dp"
+                            android:layout_height="@dimen/size_18dp"
+                            android:background="@drawable/ico_buy_car_grey" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/size_5dp"
+                            android:lines="1"
+                            android:text="@string/add"
+                            android:textColor="@color/greyBlack"
+                            android:textSize="@dimen/size_13sp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ks_page10_top"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0.5dp"
+            android:background="@color/light_grey" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_10dp"
+            android:background="@color/whiteSmoke" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/size_10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more_recommend"
+                android:textColor="@color/dimGray_m"
+                android:textSize="@dimen/size_14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0.5dp"
+            android:background="@color/light_grey" />
+
+        <com.example.wdks.newwdksapp.tools.MySwipeRefreshLayout
+            android:id="@+id/ks_page10_swRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/ks_page10_listView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:scrollbars="none" />
+        </com.example.wdks.newwdksapp.tools.MySwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <!--底部三个按钮-->
+    <LinearLayout
+        android:id="@+id/ks_page10_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/light_grey0"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ks_page10_bottom_btn1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp"
+                android:background="@drawable/ico_back_green" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ks_page10_bottom_btn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ks_page10_iv2"
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ico_buy_car" />
+
+            <com.readystatesoftware.viewbadger.BadgeView
+                android:id="@+id/ks_page10_badgeView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginTop="@dimen/size_5dp"
+                android:layout_toRightOf="@+id/ks_page10_iv2" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ks_page10_bottom_btn3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp"
+                android:background="@drawable/ico_consult" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0.5dp"
+        android:layout_above="@id/ks_page10_bottom"
+        android:background="@color/light_grey" />
+
+</RelativeLayout>

@@ -1,0 +1,335 @@
+<!--单选界面-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:radio="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none">
+    <!--内容-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--标题-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/size_10dp">
+
+            <TextView
+                android:id="@+id/ks_page29_test_one_tv1"
+                style="@style/Test_head" />
+
+            <TextView
+                android:id="@+id/ks_page29_test_one_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/size_15sp" />
+
+            <TextView
+                android:id="@+id/ks_page29_test_one_line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/ks_page29_test_one_tv2"
+                android:text="@string/slash"
+                android:textSize="@dimen/size_15sp" />
+
+            <TextView
+                android:id="@+id/ks_page29_test_one_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/ks_page29_test_one_line1"
+                android:textColor="@color/deepSkyBlue"
+                android:textSize="@dimen/size_16sp" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0.5dp"
+            android:background="@color/light_grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/size_10dp">
+
+            <TextView
+                android:id="@+id/ks_page29_test_one_tv4"
+                style="@style/Test_title" />
+
+            <RadioGroup
+                android:id="@+id/ks_page29_test_one_radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.example.wdks.newwdksapp.tools.MyRadioButton
+                    android:id="@+id/ks_page29_test_one_rb1"
+                    style="@style/Test_rb"
+                    radio:drawableLeft="@drawable/a_bg"
+                    radio:mDrawableSize="@dimen/size_40dp" />
+
+                <com.example.wdks.newwdksapp.tools.MyRadioButton
+                    android:id="@+id/ks_page29_test_one_rb2"
+                    style="@style/Test_rb"
+                    radio:drawableLeft="@drawable/b_bg"
+                    radio:mDrawableSize="@dimen/size_40dp" />
+
+                <com.example.wdks.newwdksapp.tools.MyRadioButton
+                    android:id="@+id/ks_page29_test_one_rb3"
+                    style="@style/Test_rb"
+                    radio:drawableLeft="@drawable/c_bg"
+                    radio:mDrawableSize="@dimen/size_40dp" />
+
+                <com.example.wdks.newwdksapp.tools.MyRadioButton
+                    android:id="@+id/ks_page29_test_one_rb4"
+                    style="@style/Test_rb"
+                    radio:drawableLeft="@drawable/d_bg"
+                    radio:mDrawableSize="@dimen/size_40dp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ks_page29_one_watch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_10dp"
+            android:text="@string/watch_explain"
+            android:textColor="@color/deepSkyBlue"
+            android:textSize="@dimen/size_15sp" />
+
+        <LinearLayout
+            android:id="@+id/ks_page29_test_one_resolve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_0.5dp"
+                android:background="@color/light_grey" />
+            <!--答案:线性布局分两份-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--左-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/size_5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/right_answer"
+                        android:textColor="@color/dimGray_m"
+                        android:textSize="@dimen/size_14sp" />
+
+                    <TextView
+                        android:id="@+id/ks_page29_test_one_tv5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/size_5dp"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/size_15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/size_0.5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/light_grey" />
+                <!--右-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/size_5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/your_answer"
+                        android:textColor="@color/dimGray_m"
+                        android:textSize="@dimen/size_14sp" />
+
+                    <TextView
+                        android:id="@+id/ks_page29_test_one_tv6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/size_5dp"
+                        android:textColor="@color/green"
+                        android:textSize="@dimen/size_15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_0.5dp"
+                android:background="@color/light_grey" />
+            <!--题目解析+提问+笔记-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/size_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10dp"
+                    android:text="@string/question_explain"
+                    android:textColor="@color/dimGray_m"
+                    android:textSize="@dimen/size_15sp" />
+
+                <TextView
+                    android:id="@+id/ks_page29_test_one_tv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:textColor="@color/dimGray"
+                    android:textSize="@dimen/size_14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_20dp"
+                    android:text="@string/ask"
+                    android:textColor="@color/dimGray_m"
+                    android:textSize="@dimen/size_15sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:padding="@dimen/size_5dp">
+
+                    <EditText
+                        android:id="@+id/ks_page29_test_one_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_message_shape"
+                        android:ellipsize="end"
+                        android:gravity="top"
+                        android:lines="5"
+                        android:maxLength="100"
+                        android:maxLines="5"
+                        android:padding="@dimen/size_5dp"
+                        android:textColor="@color/dimGray"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/size_14sp" />
+
+                    <Button
+                        android:id="@+id/ks_page29_test_one_btn1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size_30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/ks_page29_test_one_et"
+                        android:layout_marginTop="@dimen/size_5dp"
+                        android:background="@drawable/btn_login_shape2"
+                        android:text="@string/submit"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/size_13sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:text="笔记"
+                    android:textColor="@color/dimGray_m"
+                    android:textSize="@dimen/size_15sp" />
+
+                <TextView
+                    android:id="@+id/ks_page29_test_one_tv8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_5dp"
+                    android:text="编辑笔记"
+                    android:textColor="@color/deepSkyBlue"
+                    android:textSize="@dimen/size_14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/ks_page29_test_one_re"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/size_5dp"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/ks_page29_test_one_et1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_message_shape"
+                        android:ellipsize="end"
+                        android:gravity="top"
+                        android:lines="5"
+                        android:maxLength="100"
+                        android:maxLines="5"
+                        android:padding="@dimen/size_5dp"
+                        android:textColor="@color/dimGray"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/size_14sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/ks_page29_test_one_et1"
+                        android:layout_marginTop="@dimen/size_5dp">
+
+                        <Button
+                            android:id="@+id/ks_page29_test_one_btn2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/size_30dp"
+                            android:layout_marginTop="@dimen/size_5dp"
+                            android:background="@drawable/btn_login_shape2"
+                            android:text="确认"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_13sp" />
+
+                        <Button
+                            android:id="@+id/ks_page29_test_one_btn3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/size_30dp"
+                            android:layout_marginLeft="@dimen/size_5dp"
+                            android:layout_marginTop="@dimen/size_5dp"
+                            android:background="@drawable/btn_login_shape2"
+                            android:text="取消"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/size_13sp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

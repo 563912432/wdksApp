@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:padding="@dimen/size_10dp">
+
+    <Button
+        android:id="@+id/ks_page30_test_card_gridView_btn1"
+        android:layout_width="@dimen/size_40dp"
+        android:layout_height="@dimen/size_40dp"
+        android:background="@drawable/ico_circle_blue_off"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="1"
+        android:textColor="@color/deepSkyBlue"
+        android:textSize="@dimen/size_15sp" />
+
+</LinearLayout>

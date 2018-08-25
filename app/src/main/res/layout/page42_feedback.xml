@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ks_page42"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!--上：标题栏-->
+    <RelativeLayout
+        android:id="@+id/ks_page42_tool"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        android:background="@color/deepSkyBlue"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ks_page42_back"
+            android:layout_width="@dimen/size_50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView style="@style/Icon_back" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ks_page42_tv1"
+            style="@style/Middle_content"
+            android:text="@string/feedback" />
+    </RelativeLayout>
+    <!--下 主要内容-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_200dp">
+
+        <EditText
+            android:id="@+id/ks_page42_et1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="填写你的问题"
+            android:padding="@dimen/size_10dp"
+            android:textColor="@color/dimGray_m"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/size_15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0.5dp"
+        android:background="@color/light_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_way"
+            android:textColor="@color/dimGray"
+            android:textSize="@dimen/size_14sp" />
+
+        <EditText
+            android:id="@+id/ks_page42_et2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="QQ邮箱"
+            android:lines="1"
+            android:maxEms="20"
+            android:padding="@dimen/size_5dp"
+            android:textColor="@color/dimGray"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/size_14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0.5dp"
+        android:background="@color/light_grey" />
+
+    <Button
+        android:id="@+id/ks_page42_btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_10dp"
+        android:background="@drawable/btn_login_shape2"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_15sp" />
+
+</LinearLayout>

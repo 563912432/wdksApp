@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ks_page43"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!--上：标题栏-->
+    <RelativeLayout
+        android:id="@+id/ks_page43_tool"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        android:background="@color/deepSkyBlue"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ks_page43_back"
+            android:layout_width="@dimen/size_50dp"
+            android:layout_height="match_parent">
+
+            <ImageView style="@style/Icon_back" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ks_page43_tv1"
+            style="@style/Middle_content"
+            android:text="@string/about_us" />
+    </RelativeLayout>
+    <!--下 内容-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/size_20dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ks_page43_iv1"
+            android:layout_width="@dimen/size_80dp"
+            android:layout_height="@dimen/size_80dp"
+            android:layout_gravity="center_horizontal"
+            app:civ_border_color="@color/dimGray"
+            app:civ_border_width="@dimen/size_0.5dp" />
+
+        <TextView
+            android:id="@+id/ks_page43_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dimGray"
+            android:textSize="@dimen/size_16sp"
+            android:layout_marginTop="@dimen/size_15dp" />
+
+        <TextView
+            android:id="@+id/ks_page43_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dimGray"
+            android:textSize="@dimen/size_14sp"
+            android:layout_marginTop="@dimen/size_15dp"/>
+
+        <TextView
+            android:id="@+id/ks_page43_tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dimGray"
+            android:textSize="@dimen/size_14sp"
+            android:layout_marginTop="@dimen/size_5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

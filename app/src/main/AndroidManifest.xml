@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wdks.newwdksapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".tools.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/notes"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".WelcomeActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GuideActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 软键盘与底部工具栏 -->
+        <activity
+            android:name=".pages.Page6SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page7SearchResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page8AD1WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page9FreeVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page10BEDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page11LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page12RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page13PwdForgetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page14BuyCarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page15ConfirmOrderActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".pages.Page16AddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page17NewAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page18PSDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page19StudyCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page20MyExamActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page21MyExamCarefullyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page22CarefullyDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page23ChapterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page24YCActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page25MyCollectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page26MyWrongActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page27MyAskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page28MyNoteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page29ChapterTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page30ChapterTestCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page31YCTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page32YCTestCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page33YCTestResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page34YCTestExplainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page35MCDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page36MWDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page37MADetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page38MNDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page39OrderRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page40ReChargeRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page41PayRecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page42FeedbackActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page43AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page44VideoPlayActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page45ReChargeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page46EditAddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page47PaySuccessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page48PayFailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".pages.Page49NewsDetailsWebViewActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

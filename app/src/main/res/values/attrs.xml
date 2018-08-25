@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyRadioButton">
+        <attr name="mDrawableSize" format="dimension" />
+        <attr name="drawableTop" format="reference" />
+        <attr name="drawableLeft" format="reference" />
+        <attr name="drawableRight" format="reference" />
+        <attr name="drawableBottom" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="MyCheckBox">
+        <attr name="mCheckBoxSize" format="dimension" />
+        <attr name="checkBoxTop" format="reference" />
+        <attr name="checkBoxLeft" format="reference" />
+        <attr name="checkBoxRight" format="reference" />
+        <attr name="checkBoxBottom" format="reference" />
+    </declare-styleable>
+</resources>

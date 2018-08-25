@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ks_page29_test_five_spinner2_listView_line"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteSmoke"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/ks_page29_test_five_spinner2_listView_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_8dp"
+        android:textColor="@color/dimGray"
+        android:textSize="@dimen/size_12sp" />
+
+</LinearLayout>

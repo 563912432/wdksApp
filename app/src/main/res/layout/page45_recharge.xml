@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ks_page45"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!--上：标题栏-->
+    <RelativeLayout
+        android:id="@+id/ks_page45_tool"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        android:background="@color/deepSkyBlue"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ks_page45_back"
+            android:layout_width="@dimen/size_50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView style="@style/Icon_back" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ks_page45_tv1"
+            style="@style/Middle_content"
+            android:text="@string/recharge" />
+    </RelativeLayout>
+    <!--内容-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_20dp"
+        android:layout_marginLeft="@dimen/size_20dp"
+        android:layout_marginRight="@dimen/size_20dp"
+        android:layout_marginTop="@dimen/size_40dp"
+        android:background="@drawable/edit_login_shape"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_10dp"
+                android:text="账号:"
+                android:textColor="@color/dimGray_m"
+                android:textSize="@dimen/size_15sp" />
+
+            <EditText
+                android:id="@+id/ks_page45_edt1"
+                style="@style/log_edit" />
+
+            <ImageView
+                android:id="@+id/ks_page45_iv1"
+                android:layout_width="@dimen/size_30dp"
+                android:layout_height="@dimen/size_30dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:background="@drawable/ico_x_blue" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:background="@color/lightSkyBlue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/size_10dp"
+                android:text="密码:"
+                android:textColor="@color/dimGray"
+                android:textSize="@dimen/size_15sp" />
+
+            <EditText
+                android:id="@+id/ks_page45_edt2"
+                style="@style/log_edit" />
+
+            <ImageView
+                android:id="@+id/ks_page45_iv2"
+                android:layout_width="@dimen/size_30dp"
+                android:layout_height="@dimen/size_30dp"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:background="@drawable/ico_x_blue" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ks_page45_btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_20dp"
+        android:layout_marginRight="@dimen/size_20dp"
+        android:layout_marginTop="@dimen/size_20dp"
+        android:background="@drawable/btn_login_shape2"
+        android:text="@string/confirm"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_16sp" />
+
+</LinearLayout>

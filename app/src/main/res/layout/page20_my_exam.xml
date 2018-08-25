@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/page20"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!--标题栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        android:background="@color/deepSkyBlue"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ks_page20_back"
+            android:layout_width="@dimen/size_50dp"
+            android:layout_height="match_parent">
+
+            <ImageView style="@style/Icon_back" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ks_page20_title"
+            style="@style/Middle_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxEms="11" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_10dp"
+                android:background="@color/whiteSmoke" />
+
+            <!--俗语-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/size_8dp">
+
+                <ImageView
+                    android:layout_width="@dimen/size_30dp"
+                    android:layout_height="@dimen/size_30dp"
+                    android:background="@drawable/ico_wisdom" />
+                <!--垂直滚动内容-->
+                <com.example.wdks.newwdksapp.tools.MyLooperTextView
+                    android:id="@+id/ks_page20_looperTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_50dp"
+                    android:layout_marginLeft="@dimen/size_5dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_10dp"
+                android:background="@color/whiteSmoke" />
+
+            <com.example.wdks.newwdksapp.tools.MyGridView
+                android:id="@+id/ks_page20_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_10dp"
+                android:background="@color/white"
+                android:numColumns="3"
+                android:padding="@dimen/size_5dp"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/page28"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!--标题栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        android:background="@color/deepSkyBlue"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ks_page28_back"
+            android:layout_width="@dimen/size_50dp"
+            android:layout_height="match_parent">
+
+            <ImageView style="@style/Icon_back" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Middle_content"
+            android:text="@string/myNote" />
+    </RelativeLayout>
+    <!--主要内容-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_10dp"
+        android:background="@color/whiteSmoke" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0.5dp"
+        android:background="@color/light_grey" />
+
+    <ListView
+        android:id="@+id/ks_page28_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollbars="none" />
+
+</LinearLayout>

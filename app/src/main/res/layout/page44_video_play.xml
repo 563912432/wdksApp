@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ks_page44"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <!--视频播放器-->
+    <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+        android:id="@+id/ks_page44_jcPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_200dp">
+
+    </fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard>
+
+    <!--文字内容-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ks_page44_jcPlayer"
+        android:background="@color/whiteSmoke"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0.5dp"
+            android:background="@color/light_grey" />
+
+        <TextView
+            android:id="@+id/ks_page44_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="@dimen/size_10dp"
+            android:textColor="@color/dimGray_m"
+            android:textSize="@dimen/size_15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_0.5dp"
+            android:background="@color/light_grey" />
+
+        <ExpandableListView
+            android:id="@+id/ks_page44_ExpandList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+    <!--底部-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0.5dp"
+        android:layout_above="@+id/ks_page44_bottom"
+        android:background="@color/light_grey" />
+
+    <LinearLayout
+        android:id="@+id/ks_page44_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/whiteSmoke"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ks_page44_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/size_25dp"
+                android:layout_height="@dimen/size_25dp"
+                android:background="@drawable/ico_back_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ks_page44_download"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/size_25dp"
+                android:layout_height="@dimen/size_25dp"
+                android:background="@drawable/ico_download_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ks_page44_share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/size_25dp"
+                android:layout_height="@dimen/size_25dp"
+                android:background="@drawable/ico_share_gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

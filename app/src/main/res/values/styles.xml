@@ -1,0 +1,185 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Guide_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_40dp</item>
+        <item name="android:background">@drawable/btn_guide_shape</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginLeft">@dimen/size_90dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/size_18sp</item>
+    </style>
+
+    <style name="RadioButton_home">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/radiobutton_page1_text_col</item>
+        <item name="android:textSize">@dimen/size_15sp</item>
+        <item name="android:background">@drawable/selector_no_bg</item>
+    </style>
+
+    <style name="Page1_lv_section">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/size_10sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="LoaderConn">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/loadingconn_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Icon_back">
+        <item name="android:layout_width">@dimen/size_20dp</item>
+        <item name="android:layout_height">@dimen/size_20dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/size_10dp</item>
+        <item name="android:background">@drawable/ico_back</item>
+    </style>
+
+    <style name="Middle_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/size_16sp</item>
+    </style>
+
+    <style name="Loader">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/loading_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="MyProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/my_progressbar</item>
+        <item name="android:minWidth">20dip</item>
+        <item name="android:maxWidth">20dip</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <style name="RadioButton_book_details">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/radiobutton_page1_text_col</item>
+        <item name="android:textSize">@dimen/size_13sp</item>
+        <item name="android:checkable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/selector_no_bg</item>
+        <item name="android:paddingTop">@dimen/size_5dp</item>
+        <item name="android:paddingBottom">@dimen/size_5dp</item>
+    </style>
+
+    <style name="AnimTools" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_in</item>
+        <item name="android:windowExitAnimation">@anim/push_out</item>
+    </style>
+
+    <style name="AnimTools_page10" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/page10_push_in</item>
+        <item name="android:windowExitAnimation">@anim/page10_push_out</item>
+    </style>
+
+    <style name="log_edit">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/dimGray_m</item>
+        <item name="android:textSize">@dimen/size_15sp</item>
+        <item name="android:lines">1</item>
+    </style>
+
+    <style name="Setting">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/size_20dp</item>
+        <item name="android:textColor">@color/dimGray_m</item>
+        <item name="android:textSize">@dimen/size_14sp</item>
+    </style>
+
+    <style name="Username">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/size_20dp</item>
+        <item name="android:layout_marginRight">@dimen/size_20dp</item>
+        <item name="android:textColor">@color/dimGray_m</item>
+        <item name="android:textSize">@dimen/size_14sp</item>
+    </style>
+
+    <style name="Test_head">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">@dimen/size_10dp</item>
+        <item name="android:textColor">@color/dimGray_m</item>
+        <item name="android:textSize">@dimen/size_15sp</item>
+    </style>
+
+    <style name="Test_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingExtra">@dimen/size_5dp</item>
+        <item name="android:padding">@dimen/size_5dp</item>
+        <item name="android:textSize">@dimen/size_16sp</item>
+        <item name="android:textColor">@color/dimGray_m</item>
+    </style>
+
+    <style name="Test_rb">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/dimGray</item>
+        <item name="android:textSize">@dimen/size_16sp</item>
+        <item name="android:checkable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">@dimen/size_5dp</item>
+    </style>
+
+    <style name="Test_answer">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/size_10dp</item>
+        <item name="android:text">这里放答案和解析</item>
+        <item name="android:textSize">@dimen/size_16sp</item>
+    </style>
+
+    <style name="AddAddress_et">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:gravity">right</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textSize">@dimen/size_14sp</item>
+    </style>
+
+</resources>

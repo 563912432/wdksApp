@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/size_10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exam_recommend"
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_15sp" />
+
+        <!--更多-->
+        <LinearLayout
+            android:id="@+id/ks_page1_exam_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/more"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/size_12sp" />
+
+            <ImageView
+                android:id="@+id/ks_page1_exam_iv2"
+                android:layout_width="@dimen/size_12dp"
+                android:layout_height="@dimen/size_12dp"
+                android:src="@drawable/ico_more" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0.5dp"
+        android:background="@color/light_grey" />
+
+    <RadioGroup
+        android:id="@+id/ks_page1_exam_rg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_10dp"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/ks_page1_exam_rb1"
+            style="@style/RadioButton_home"
+            android:text="@string/accountant" />
+
+        <RadioButton
+            android:id="@+id/ks_page1_exam_rb2"
+            style="@style/RadioButton_home"
+            android:text="@string/finance" />
+
+        <RadioButton
+            android:id="@+id/ks_page1_exam_rb3"
+            style="@style/RadioButton_home"
+            android:text="@string/architect" />
+
+        <RadioButton
+            android:id="@+id/ks_page1_exam_rb4"
+            style="@style/RadioButton_home"
+            android:text="@string/medicine" />
+
+        <RadioButton
+            android:id="@+id/ks_page1_exam_rb5"
+            style="@style/RadioButton_home"
+            android:text="@string/teacher" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/ks_page1_exam_iv3"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_2dp"
+        android:background="@color/deepSkyBlue" />
+
+    <com.example.wdks.newwdksapp.tools.MyListView
+        android:id="@+id/ks_page1_exam_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/size_5dp">
+
+    </com.example.wdks.newwdksapp.tools.MyListView>
+
+</LinearLayout>

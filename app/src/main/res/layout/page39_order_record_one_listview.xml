@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <!--上-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_num"
+            android:textColor="@color/dimGray"
+            android:textSize="@dimen/size_14sp" />
+
+        <TextView
+            android:id="@+id/ks_page39_one_listView_tv1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/dimGray"
+            android:textSize="@dimen/size_14sp" />
+
+        <TextView
+            android:id="@+id/ks_page39_one_listView_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!--中-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0.5dp"
+        android:background="@color/light_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_130dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_10dp">
+
+        <!--中左-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/ks_page39_one_listView_iv1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+        <!--中右-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/size_5dp"
+            android:layout_weight="5"
+
+
+            android:orientation="vertical">
+            <!--中右上-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/ks_page39_one_listView_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:textColor="@color/dimGray_m"
+                    android:textSize="@dimen/size_15sp" />
+
+            </LinearLayout>
+            <!--中右中-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price"
+                    android:textColor="@color/dimGray_m"
+                    android:textSize="@dimen/size_13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_ying"
+                    android:textColor="@color/deep_red"
+                    android:textSize="@dimen/size_13sp" />
+
+                <TextView
+                    android:id="@+id/ks_page39_one_listView_tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/deep_red"
+                    android:textSize="@dimen/size_13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/size_10dp"
+                    android:text="@string/numbers"
+                    android:textColor="@color/dimGray"
+                    android:textSize="@dimen/size_13sp" />
+
+                <TextView
+                    android:id="@+id/ks_page39_one_listView_tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dimGray"
+                    android:textSize="@dimen/size_13sp" />
+
+            </LinearLayout>
+            <!--中右下-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/ks_page39_one_listView_tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:textColor="@color/dimGray"
+                    android:textSize="@dimen/size_14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--下-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/light_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_10dp">
+
+        <!--下左-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <!--下左上-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_all"
+                    android:textColor="@color/dimGray_m"
+                    android:textSize="@dimen/size_14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_ying"
+                    android:textColor="@color/deep_red"
+                    android:textSize="@dimen/size_14sp" />
+
+                <TextView
+                    android:id="@+id/ks_page39_one_listView_tv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/deep_red"
+                    android:textSize="@dimen/size_14sp" />
+
+            </LinearLayout>
+
+            <!--下左下-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="含运费(￥"
+                    android:textColor="@color/dimGray"
+                    android:textSize="@dimen/size_14sp" />
+
+                <TextView
+                    android:id="@+id/ks_page39_one_listView_tv8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dimGray_m"
+                    android:textSize="@dimen/size_14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=")"
+                    android:textColor="@color/dimGray"
+                    android:textSize="@dimen/size_14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/ks_page39_one_listView_tv11"
+                android:layout_width="@dimen/size_60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/text_order_shape"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/size_12sp" />
+
+            <TextView
+                android:id="@+id/ks_page39_one_listView_tv10"
+                android:layout_width="@dimen/size_60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:layout_toLeftOf="@+id/ks_page39_one_listView_tv11"
+                android:background="@drawable/text_order_shape"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/size_12sp" />
+
+            <TextView
+                android:id="@+id/ks_page39_one_listView_tv9"
+                android:layout_width="@dimen/size_60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/size_10dp"
+                android:layout_toLeftOf="@+id/ks_page39_one_listView_tv10"
+                android:background="@drawable/text_order_shape"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/size_12sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

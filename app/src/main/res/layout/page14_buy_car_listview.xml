@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--主要内容 分左、右两部分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/size_10dp">
+        <!--左-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/ks_page14_listView_chose"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.example.wdks.newwdksapp.tools.MyCheckBox
+                    android:id="@+id/ks_page14_listView_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    app:checkBoxLeft="@drawable/cb_buy_car_bg"
+                    app:mCheckBoxSize="@dimen/size_25dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--主内容-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <!--左-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/size_110dp"
+                android:layout_weight="3"
+                android:background="@drawable/line_buy_car_shape"
+                android:padding="@dimen/size_5dp">
+
+                <ImageView
+                    android:id="@+id/ks_page14_listView_list_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+            <!--右-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/size_10dp"
+                android:layout_weight="5"
+                android:orientation="vertical">
+                <!--上-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/ks_page14_listView_intro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/greyBlack"
+                        android:textSize="@dimen/size_15sp" />
+
+                </LinearLayout>
+                <!--中-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price"
+                        android:textColor="@color/deep_red"
+                        android:textSize="@dimen/size_13sp" />
+
+                    <TextView
+                        android:id="@+id/ks_page14_listView_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/deep_red"
+                        android:textSize="@dimen/size_13sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+                <!--下-->
+                <LinearLayout
+                    android:id="@+id/ks_page14_listView_line_xia"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/buy_numbers"
+                        android:textColor="@color/dimGray"
+                        android:textSize="@dimen/size_13sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/size_5dp"
+                        android:background="@drawable/line_buy_car_shape"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ks_page14_listView_line_reduce"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="@dimen/size_8dp">
+
+                            <ImageView
+                                android:id="@+id/ks_page14_listView_reduce"
+                                android:layout_width="@dimen/size_15dp"
+                                android:layout_height="@dimen/size_15dp"
+                                android:background="@drawable/ico_reduce" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="@dimen/size_0.3dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/dimGray" />
+
+                        <TextView
+                            android:id="@+id/ks_page14_listView_num"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:minEms="2"
+                            android:textSize="@dimen/size_13sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="@dimen/size_0.3dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/dimGray" />
+
+                        <LinearLayout
+                            android:id="@+id/ks_page14_listView_line_add"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:paddingBottom="@dimen/size_5dp"
+                            android:paddingLeft="@dimen/size_10dp"
+                            android:paddingRight="@dimen/size_10dp"
+                            android:paddingTop="@dimen/size_5dp">
+
+                            <ImageView
+                                android:id="@+id/ks_page14_listView_add"
+                                android:layout_width="@dimen/size_15dp"
+                                android:layout_height="@dimen/size_15dp"
+                                android:background="@drawable/ico_add" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

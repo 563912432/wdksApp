@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/page18"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!--标题栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50dp"
+        android:background="@color/deepSkyBlue"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ks_page18_back"
+            android:layout_width="@dimen/size_50dp"
+            android:layout_height="match_parent">
+
+            <ImageView style="@style/Icon_back" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Middle_content"
+            android:text="@string/setting" />
+    </RelativeLayout>
+    <!--头像-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_90dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_20dp"
+            android:text="@string/portrait"
+            android:textColor="@color/dimGray_m"
+            android:textSize="@dimen/size_14sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/id_page18_iv1"
+            android:layout_width="@dimen/size_70dp"
+            android:layout_height="@dimen/size_70dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_20dp"
+            android:src="@drawable/ico_portrait" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0.5dp"
+        android:background="@color/light_grey" />
+    <!--密码-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_60dp">
+
+        <TextView
+            style="@style/Setting"
+            android:text="@string/change_pwd" />
+
+        <ImageView
+            android:id="@+id/id_page18_iv2"
+            android:layout_width="@dimen/size_30dp"
+            android:layout_height="@dimen/size_30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_20dp"
+            android:background="@drawable/ico_sign" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0.5dp"
+        android:background="@color/light_grey" />
+    <!--邮箱-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_60dp">
+
+        <TextView
+            android:id="@+id/id_page18_email"
+            style="@style/Setting"
+            android:text="邮箱" />
+
+        <TextView
+            android:id="@+id/id_page18_tv1"
+            style="@style/Setting"
+            android:layout_toRightOf="@+id/id_page18_email"
+            android:text="(点击修改)"
+            android:textColor="@color/deepSkyBlue" />
+
+
+        <TextView
+            android:id="@+id/id_page18_tv2"
+            style="@style/Setting"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size_20dp"
+            android:text="563912432@qq.com" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_0.5dp"
+        android:background="@color/light_grey" />
+    <!--退出登录-->
+    <Button
+        android:id="@+id/ks_page18_btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_10dp"
+        android:background="@drawable/btn_login_shape2"
+        android:text="@string/exit_login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_15sp" />
+</LinearLayout>
